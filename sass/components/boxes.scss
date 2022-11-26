@@ -1,0 +1,38 @@
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 96px;
+    gap: 20px;
+}
+
+.box {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__title {
+        font-size: 1rem;
+        font-weight: $fw-medium;
+        line-height: 24px;
+        letter-spacing: -0.011px;
+        color: $gray-800;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+
+        @media (max-width: $bp-1280) {
+            font-weight: $fw-semibold;
+            font-size: 0.8rem;
+            line-height: 18px;
+        }
+    }
+
+    &__perex {
+        font-size: 0.8rem;
+        font-weight: $fw-regular;
+        line-height: 18px;
+        color: $gray-700;
+    }
+}

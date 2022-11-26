@@ -5,10 +5,11 @@ body, html {
   width: 100%;
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  overflow-x: clip; }
+  overflow-x: clip;
+  box-sizing: border-box; }
 
 body {
-  padding-top: 50px;
+  padding-top: 30px;
   background: #F3F3F5; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,6 +22,11 @@ p {
 
 .container {
   width: 100%; }
+
+.container--small {
+  max-width: 1300px;
+  width: 90%;
+  margin: auto; }
 
 .hero {
   max-width: 1788px;
@@ -101,15 +107,18 @@ p {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 7px;
-      width: 217px;
-      height: 48px;
+      padding: 15px 24px;
       background: linear-gradient(127.93deg, #2EBD7A -2.9%, #25A066 96.02%);
       border-radius: 6px;
       color: #fff;
       font-weight: 600;
       font-size: 0.8rem;
       line-height: 18px; }
+      .hero-left__btn-link .hero-left__btn:hover {
+        color: #2F3744;
+        background: #DEFBE6;
+        border: 1px solid #25A066;
+        padding: 14px 23px; }
     .hero-left__btn-link .hero-left__link {
       font-weight: 400;
       font-size: 0.8rem;
@@ -133,13 +142,62 @@ p {
     width: 400px;
     height: 400px;
     margin: 100px 214px 100px 214px;
-    background-color: #0038E5;
-    opacity: 0.2; }
+    border: 1px solid #0038E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
     @media (max-width: 1560px) {
       .hero-right .visual-safe-area {
         margin: 100px 108px 100px 108px; } }
     @media (max-width: 1280px) {
       .hero-right .visual-safe-area {
         margin: 100px 38px 100px 38px; } }
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 96px;
+  gap: 20px; }
+
+.box {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px; }
+  .box__title {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.011px;
+    color: #2F3744;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden; }
+    @media (max-width: 1280px) {
+      .box__title {
+        font-weight: 600;
+        font-size: 0.8rem;
+        line-height: 18px; } }
+  .box__perex {
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 18px;
+    color: #717578; }
+
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  background: rgba(0, 56, 229, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .circle .circle__inner {
+    height: 12px;
+    width: 12px;
+    border-radius: 12px;
+    background: #0038E5; }
 
 /*# sourceMappingURL=style.css.map */

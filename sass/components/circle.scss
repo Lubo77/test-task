@@ -1,0 +1,16 @@
+.circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 12px;
+    background: rgba(0,56,229, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .circle__inner {
+        height: 12px;
+        width: 12px;
+        border-radius: 12px;
+        background: $blue-1;
+    }
+}
