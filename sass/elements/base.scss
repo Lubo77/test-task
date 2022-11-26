@@ -11,10 +11,6 @@ body, html {
 body {
     padding-top: 50px;
     background: $gray-200;
-
-    @media (max-width: $xl) {
-        background-color: green;
-    }
 }
 
 h1, h2, h3, h4, h5, h6 {
