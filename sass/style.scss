@@ -1,3 +1,13 @@
-// elements
+// setting
+@import "./settings/colors.scss";
+@import "./settings/typography.scss";
+@import "./settings/breakpoints.scss";
 
+// elements
 @import "./elements/base.scss";
+
+// utilities
+@import "./utilities/sizing.scss";
+
+// components
+@import "./components/hero.scss";

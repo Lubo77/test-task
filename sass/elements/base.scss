@@ -8,4 +8,21 @@ body, html {
     overflow-x: clip;
 }
 
-// Na dalsie pozri v mua base.scss
+body {
+    padding-top: 50px;
+    background: $gray-200;
+
+    @media (max-width: $xl) {
+        background-color: green;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+  
+p {
+    padding: 0;
+    margin: 0;
+}
