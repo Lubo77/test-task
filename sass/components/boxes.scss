@@ -6,10 +6,18 @@
 }
 
 .box {
-    width: 300px;
+    width: 360px;
     display: flex;
     flex-direction: column;
     gap: 24px;
+
+    @media (max-width: $bp-1350) {
+        width: 300px;
+    }
+
+    @media (max-width: $bp-1100) {
+        width: 240px;
+    }
 
     &__title {
         font-size: 1rem;
@@ -34,5 +42,9 @@
         font-weight: $fw-regular;
         line-height: 18px;
         color: $gray-700;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 }

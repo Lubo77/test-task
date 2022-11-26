@@ -6,7 +6,8 @@ body, html {
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: clip;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif; }
 
 body {
   padding-top: 30px;
@@ -24,7 +25,7 @@ p {
   width: 100%; }
 
 .container--small {
-  max-width: 1300px;
+  max-width: 1308px;
   width: 90%;
   margin: auto; }
 
@@ -183,10 +184,16 @@ p {
   gap: 20px; }
 
 .box {
-  width: 300px;
+  width: 360px;
   display: flex;
   flex-direction: column;
   gap: 24px; }
+  @media (max-width: 1350px) {
+    .box {
+      width: 300px; } }
+  @media (max-width: 1100px) {
+    .box {
+      width: 240px; } }
   .box__title {
     font-size: 1rem;
     font-weight: 500;
@@ -206,7 +213,11 @@ p {
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 18px;
-    color: #717578; }
+    color: #717578;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden; }
 
 .circle {
   height: 24px;
