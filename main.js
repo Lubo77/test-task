@@ -4,5 +4,4 @@ let bannerChecked = document.querySelector('.hero-left__checked-banner');
 btnDemo.addEventListener('click', () => {
     btnDemo.classList.toggle('hide');
     bannerChecked.classList.toggle('show');
-    // btnDemo.innerText = "Your request has been sent";
 })
